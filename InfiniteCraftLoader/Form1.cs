@@ -67,6 +67,9 @@ namespace InfiniteCraftLoader
                 // Read the json file
                 string json = System.IO.File.ReadAllText(openFileDialog.FileName);
 
+                // make it to one line so it can be set to Local Storage
+                json = json.Replace(Environment.NewLine, "");
+
                 // Set the json data to "infinite-craft-data" in Local Storage
                 webView.EvalScript("localStorage.setItem('infinite-craft-data', '" + json + "');");
 
