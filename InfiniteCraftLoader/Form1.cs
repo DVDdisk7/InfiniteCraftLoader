@@ -113,5 +113,14 @@ namespace InfiniteCraftLoader
                 }
             }
         }
+
+        private void webView_UrlChanged(object sender, EventArgs e)
+        {
+            // Get back to the normal page if the user tries to go to another page
+            if (webView.Url != "https://neal.fun/infinite-craft/")
+            {
+                webView.Url = "https://neal.fun/infinite-craft/";
+            }
+        }
     }
 }

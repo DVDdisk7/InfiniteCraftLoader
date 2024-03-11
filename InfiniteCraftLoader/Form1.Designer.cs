@@ -62,7 +62,7 @@
             this.saveToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip.Size = new System.Drawing.Size(1264, 25);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Text = "Menu";
             // 
@@ -93,12 +93,16 @@
             this.saveToolStripButton.Text = "Opslaan";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
+            // webView
+            // 
+            this.webView.UrlChanged += new System.EventHandler(this.webView_UrlChanged);
+            // 
             // webControl
             // 
             this.webControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webControl.Location = new System.Drawing.Point(0, 25);
             this.webControl.Name = "webControl";
-            this.webControl.Size = new System.Drawing.Size(800, 425);
+            this.webControl.Size = new System.Drawing.Size(1264, 656);
             this.webControl.TabIndex = 1;
             this.webControl.TabStop = false;
             // 
@@ -106,12 +110,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.webControl);
             this.Controls.Add(this.toolStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Infinite Craft Loader";
+            this.Text = "Infinite Craft";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip.ResumeLayout(false);
